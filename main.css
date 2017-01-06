@@ -8,3 +8,21 @@
   line-height: 80px;
   }
 */
+
+.splash-container {
+  padding: 2% 12%;
+}
+
+.splash-container h3 {
+  margin-top: 0;
+}
+
+
+.img-main-headshot {
+max-width: 90%;
+max-height: auto;
+}
+
+.contact-me-btn {
+  margin: 30px 0px;
+}
