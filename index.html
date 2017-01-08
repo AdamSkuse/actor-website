@@ -9,12 +9,14 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/94295569fc.js"></script>
+
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top navbar-gradient">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,34 +27,48 @@
       <a class="navbar-brand" href="#"><h1>Wendy Kenney</h1>Actor, Los Angeles, CA</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="row">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Reel</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reel">Reel</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+    </div>
+      <!-- social media icons -->
+      <div class="row">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://www.imdb.com/name/nm4126586/" target="_blank"><i class="fa fa-2x fa-imdb"></i></a></li>
+              <li><a href="https://twitter.com/WendyKenney9" target="_blank"><i class="fa fa-2x fa-twitter"></i></a></li>
+            </ul>
+      </div>
     </div>
   </div>
 </nav>
 
+
 <div class="container splash-container">
-<div class="row">
-  <div class="col-xs-7">
-    <img src="images/wendy-1.jpg" class="img-responsive img-main-headshot" alt="Wendy Kenney headshot">
+  <div class="row">
+    <div class="col-xs-7">
+      <img src="images/wendy-1.jpg" class="img-responsive img-main-headshot" alt="Wendy Kenney headshot">
+    </div>
+    <div class="col-xs-5">
+      <h3>Recent roles</h3>
+      <hr>
+      <p>Anne Boleyn, Edinburgh Fringe Festival</p>
+      <p>Murder Maps</p>
+      <p>50 Ways to Kill Your Lover</p><br><br>
+      <h3>Upcoming</h3>
+      <hr>
+      <p>Stealing Sunrise 2: Malibu Trail</p>
+      <div class="row">
+        <div class="col-xs-2">
+          <a href="#contact"><button type="button" class="btn btn-primary btn-lg contact-me-btn styled-btn">Contact me</button></a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="col-xs-5">
-    <h3>Recent roles</h3>
-    <hr>
-    <p>Anne Boleyn, Edinburgh Fringe Festival</p>
-    <p>Murder Maps</p>
-    <p>50 Ways to Kill Your Lover</p><br><br>
-    <h3>Upcoming</h3>
-    <hr>
-    <p>Stealing Sunrise 2: Malibu Trail</p>
-    <button type="button" class="btn btn-primary btn-lg contact-me-btn styled-btn">Contact me</button>
-  </div>
-</div>
 </div>
 
 <!-- RESUME -->
@@ -60,7 +76,7 @@
 <div class="container sub-panel bg-black">
   <div class="row">
     <div class="col-xs-7">
-      <h2>Resume</h2>
+      <h2 id="resume" style="padding-top: 170px; margin-top: -170px;">Resume</h2>
       <hr>
       <p>Height: 5'7"</p>
       <p>Hair: Natural Brown</p>
@@ -300,7 +316,7 @@
 <!-- Gallery -->
 <div class="container sub-panel">
   <div class="row">
-    <h2>Head Shots &amp; Production Stills</h2>
+    <h2 id="gallery" style="padding-top: 170px; margin-top: -170px;">Head Shots &amp; Production Stills</h2>
     <hr>
     <div class="row">
       <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="images/wendy-1.jpg"></a><div class="caption"><p>Lorem ipsum...</p></div></div>
@@ -339,31 +355,35 @@
 </div>
 
 <!-- Show reel -->
-<div class="container sub-panel">
+<div class="container bg-black video-panel">
   <div class="row">
-    <h2>Showreel</h2>
+    <h2 id="reel" style="padding-top: 170px; margin-top: -170px;">Showreel</h2>
     <hr>
   </div>
   <div class="container">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/C_rXmeK4pbE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
   </div>
+  <hr>
 </div>
 
 <!-- Contact form -->
 <div class="container contact-form splash-container">
-  <h2 id="contact">Contact me</h2>
-  <form id="contact-form" role="form">
+  <h2 id="contact" style="padding-top: 170px; margin-top: -170px;">Contact me</h2>
+
+  <form id="my-contact-form" role="form" action="https://www.enformed.io/yg4xhhtt" method="POST">
     <div class="form-group">
       <label for="email">Email address:</label>
-      <input type="email" class="form-control form-orange" id="email">
+      <input type="email" name="email" class="form-control form-orange" id="email" />
     </div>
     <div class="form-group">
       <label for="form_message">Your message</label>
       <textarea id="form_message" name="message" class="form-control form-orange" placeholder="Enter your message here" rows="4"></textarea>
+      <input type="hidden" name="*honeypot" />
     </div>
     <button type="submit" class="btn btn-default orange-form-btn">Submit</button>
   </form>
 </div>
+
 
 
 <!-- Footer -->
