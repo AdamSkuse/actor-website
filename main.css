@@ -101,6 +101,10 @@ max-width: 90%;
 max-height: auto;
 }
 
+.gallery-row {
+  padding-bottom: 25px;
+}
+
 .contact-me-btn {
   margin: 30px 0px;
 }
